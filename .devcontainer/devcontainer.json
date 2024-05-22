@@ -1,6 +1,6 @@
 {
     "name": "Next.js Tutorial Project",
-    "dockerComposeFile": "compose.yml",
+    "dockerComposeFile": "../compose.yml",
     "service": "nextjs-dashboard",
     "workspaceFolder": "/workspace",
     "customizations": {
