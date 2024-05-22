@@ -1,0 +1,15 @@
+services:
+  nextjs-dashboard:
+    container_name: nextjs-dashboard
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+    - type: bind
+      source: ./app
+      target: /workspace
+    #"react-app"の部分がプロジェクト名になる
+    command: sh -c "cd nextjs-dashboard && yarn start" 
+    ports:
+      - 3000:3000
+    stdin_open: true #標準入力をコンテナと紐付ける

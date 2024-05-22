@@ -1,0 +1,13 @@
+{
+    "name": "Next.js Tutorial Project",
+    "dockerComposeFile": "compose.yml",
+    "service": "nextjs-dashboard",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dsznajder.es7-react-js-snippets"
+            ]
+        }
+    }
+}
