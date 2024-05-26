@@ -9,7 +9,7 @@ services:
       source: ./app
       target: /workspace
     #"react-app"の部分がプロジェクト名になる
-    command: sh -c "cd nextjs-dashboard && npm i @vercel/postgres && npm run dev"
+    command: sh -c "cd nextjs-dashboard && npm i @vercel/postgres && npm run dev && npm run seed"
     ports:
       - 3000:3000
     stdin_open: true #標準入力をコンテナと紐付ける
